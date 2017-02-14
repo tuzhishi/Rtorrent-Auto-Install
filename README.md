@@ -1,10 +1,8 @@
 
-# Rtorrent + Rutorrent Auto Install Script by Patrick Kerwood
-
-http://LinuxBloggen.dk/
+# Rtorrent + Rutorrent Auto Install Script by Patrick Kerwood modify by Allen Woo
 
 ## Docker
-Check out the Rtorrent + Rutorrent Docker container. Get started with rtorrent in just seconds.  
+Check out the Rtorrent0.9.4 + Rutorrent3.6 Docker container. Get started with rtorrent in just seconds.  
 [https://github.com/Kerwood/Rtorrent-LXC](https://github.com/Kerwood/Rtorrent-LXC)
 
 ## Manual install
