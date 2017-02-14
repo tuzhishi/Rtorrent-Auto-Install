@@ -16,9 +16,6 @@ The Jessie script was adapted for the new default init system. Should run fine o
 
 Please use `systemctl start rtorrent` and `systemctl stop rtorrent` instead of the service command.
 
-**Raspbian Wheezy**
-Credit for the Raspbian script goes to [miracle091](https://github.com/miracle091), good work mate.
-
 **What the scripts do**
 In the installation process you have to choose a system user to run rtorrent.
 Also you will get the opportunity of installing a total of 46 plugins. See list further down.
@@ -30,25 +27,21 @@ given username's screen/tmux session. Use "service rtorrent-init start" and
 Installation
 ------------
 
-Installation video - https://www.youtube.com/watch?v=3iwsoKcUgn0
-
 Actual version for the scripts: 
 - Wheezy **4.0.0**
 - Jessie **4.0.0**
-- ~~Raspbian 3.0.2~~ - Not maintained, you can find it in the RaspberryPi branch.
-- ~~Raspbian Nginx 1.1.0~~ Not maintained, you can find it in the RaspberryPi branch.
 
 Download the script. Remember to change the X.X.X to the actual version.
 
-	wget https://raw.githubusercontent.com/Kerwood/rtorrent.auto.install/master/Rtorrent-Auto-Install-X.X.X-Debian-Wheezy
+	wget https://github.com/tuzhishi/Rtorrent-Auto-Install/blob/master/Rtorrent-Auto-Install-4.0.0-Debian-Wheezy
 
 Make it executable.
 
-	chmod +x Rtorrent-Auto-Install-X.X.X-Debian-Wheezy
+	chmod +x Rtorrent-Auto-Install-4.0.0-Debian-Wheezy
 
 Run the script.
 
-	sudo ./Rtorrent-Auto-Install-X.X.X-Debian-Wheezy
+	sudo ./Rtorrent-Auto-Install-4.0.0-Debian-Wheezy
 
 
 Installs
@@ -142,7 +135,7 @@ Actual version for the script:
 
 Download the script. Remember to change the X.X to the actual version.
 
-	wget https://raw.githubusercontent.com/Kerwood/rtorrent.auto.install/master/Plugins-installer-script-X.X
+	wget https://github.com/tuzhishi/Rtorrent-Auto-Install/blob/master/Plugins-installer-script-3.1.1
 
 Make it executable.
 
