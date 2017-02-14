@@ -741,9 +741,9 @@ function INSTALL_RTORRENT {
 	cd ..
 
 	# Download and install rtorrent
-	curl -L http://rtorrent.net/downloads/rtorrent-0.9.6.tar.gz -o rtorrent.tar.gz
+	curl -L http://rtorrent.net/downloads/rtorrent-0.9.4.tar.gz -o rtorrent.tar.gz
 	tar -zxvf rtorrent.tar.gz
-	cd rtorrent-0.9.6
+	cd rtorrent-0.9.4
 	./autogen.sh
 	./configure --with-xmlrpc-c
 	make
