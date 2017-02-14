@@ -779,8 +779,8 @@ function INSTALL_RTORRENT {
 # Function for installing rutorrent and plugins
 function INSTALL_RUTORRENT {
 	# Installing rutorrent.
-	curl -L http://dl.bintray.com/novik65/generic/rutorrent-3.6.tar.gz -o rutorrent-3.6.tar.gz
-	tar -zxvf rutorrent-3.6.tar.gz
+	curl -L http://dl.bintray.com/novik65/generic/rutorrent-3.7.tar.gz -o rutorrent-3.7.tar.gz
+	tar -zxvf rutorrent-3.7.tar.gz
 
 	if [ -d /var/www/rutorrent ]; then
 		rm -r /var/www/rutorrent
@@ -790,7 +790,7 @@ function INSTALL_RUTORRENT {
 	sed -i "s/\/RPC2/\/rutorrent\/RPC2/g" ./rutorrent/conf/config.php
 
 	mv -f rutorrent /var/www/
-	rm -v rutorrent-3.6.tar.gz
+	rm -v rutorrent-3.7.tar.gz
 
 	if [ -d "$TEMP_PLUGIN_DIR" ]; then
 		mv -fv "$TEMP_PLUGIN_DIR"/* /var/www/rutorrent/plugins
