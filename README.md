@@ -33,7 +33,7 @@ Actual version for the scripts:
 
 Download the script. Remember to change the X.X.X to the actual version.
 
-	wget https://github.com/tuzhishi/Rtorrent-Auto-Install/blob/master/Rtorrent-Auto-Install-4.0.0-Debian-Wheezy
+	wget https://github.com/tuzhishi/Rtorrent-Auto-Install/raw/master/Rtorrent-Auto-Install-4.0.0-Debian-Wheezy
 
 Make it executable.
 
@@ -135,7 +135,7 @@ Actual version for the script:
 
 Download the script. Remember to change the X.X to the actual version.
 
-	wget https://github.com/tuzhishi/Rtorrent-Auto-Install/blob/master/Plugins-installer-script-3.1.1
+	wget https://github.com/tuzhishi/Rtorrent-Auto-Install/raw/master/Plugins-installer-script-3.1.1
 
 Make it executable.
 
