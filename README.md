@@ -2,7 +2,7 @@
 # Rtorrent + Rutorrent Auto Install Script by Patrick Kerwood modify by Allen Woo
 
 ## Docker
-Check out the Rtorrent0.9.4 + Rutorrent3.6 Docker container. Get started with rtorrent in just seconds.  
+Check out the Rtorrent0.9.4 + Rutorrent3.7 Docker container. Get started with rtorrent in just seconds.  
 [https://github.com/Kerwood/Rtorrent-LXC](https://github.com/Kerwood/Rtorrent-LXC)
 
 ## Manual install
@@ -33,15 +33,15 @@ Actual version for the scripts:
 
 Download the script. Remember to change the X.X.X to the actual version.
 
-	wget https://github.com/tuzhishi/Rtorrent-Auto-Install/raw/master/Rtorrent-Auto-Install-4.0.0-Debian-Wheezy
+	wget https://raw.githubusercontent.com/tuzhishi/Rtorrent-Auto-Install/master/Rtorrent-Auto-Install-0.9.4.1-Debian-Jessie
 
 Make it executable.
 
-	chmod +x Rtorrent-Auto-Install-4.0.0-Debian-Wheezy
+	chmod +x Rtorrent-Auto-Install-0.9.4.1-Debian-Jessie
 
 Run the script.
 
-	sudo ./Rtorrent-Auto-Install-4.0.0-Debian-Wheezy
+	sudo ./Rtorrent-Auto-Install-0.9.4.1-Debian-Jessie
 
 
 Installs
@@ -139,11 +139,11 @@ Download the script. Remember to change the X.X to the actual version.
 
 Make it executable.
 
-	chmod +x Plugins-installer-script-X.X
+	chmod +x Plugins-installer-script-3.1.1
 
 Run the script.
 
-	sudo ./Plugins-installer-script-X.X
+	sudo ./Plugins-installer-script-3.1.1
 
 
 Login box does not appear after install!!!
@@ -155,4 +155,30 @@ If one of these plugins are installed (they are both in the all-plugins-pack) yo
 You can remove them using below command:
 
 	sudo rm -rfv /var/www/rutorrent/plugins/{httprpc,rpc}
+
+------------------------------------------
+
+install transmission
+
+	mkdir /home/html/Downloads
+	chmod -R 777 /home/html/Downloads
+	apt-get update -y
+	apt-get install -y transmission-daemon
+	service transmission-daemon stop
+	apt-get install -y vim
+	vim /etc/transmission-daemon/settings.json
 	
+	"dht-enabled": false。
+	"download-dir": "/home/html/Downloads"。
+	"encryption": 2。
+	"incomplete-dir": "/home/html/Downloads"。
+	"rpc-password": "000000"。
+	"rpc-username": "username"。
+	"rpc-whitelist-enabled": false。
+	
+	service transmission-daemon start
+	
+	wget https://github.com/tuzhishi/Rtorrent-Auto-Install/raw/master/Files/transmission-control-full.tar.gz
+
+解压位置:
+	/usr/share/transmission
